@@ -26,6 +26,7 @@ class ExampleRandomNormal(tf.keras.initializers.Initializer):
     def get_config(self):  # To support serialization
       return {'mean': self.mean, 'stddev': self.stddev}
 
+
 class CustomInitializer(tf.keras.initializers.Initializer):
     def __init__(self):
         pass
